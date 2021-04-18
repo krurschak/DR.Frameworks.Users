@@ -9,7 +9,15 @@ namespace DR.Frameworks.Users.Models
     {
         public User() { }
 
-        public User(Guid id, string identitySub, string identityIss, string email, int? salutation, string title, string lastName, string firstName)
+        public User(
+            Guid id,
+            string email,
+            string identitySub = null,
+            string identityIss = null,
+            int? salutation = null,
+            string title = null,
+            string lastName = null,
+            string firstName = null)
         {
             Id = id;
             IdentitySub = identitySub;
